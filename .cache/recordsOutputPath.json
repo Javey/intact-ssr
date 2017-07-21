@@ -1,0 +1,82 @@
+{
+  "modules": {
+    "byIdentifier": {
+      "node_modules/babel-loader/lib/index.js??ref--0-0!../miss/src/utils.js": 0,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!../miss/src/vnode.js": 1,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!../vdt.js/src/lib/utils.js": 2,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!../miss/src/vpatch.js": 3,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!node_modules/process/browser.js": 4,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!../miss/src/vdom.js": 5,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!../miss/src/event.js": 6,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!../miss/src/wrappers/process.js": 7,
+      "node_modules/webpack/buildin/amd-options.js": 8,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!client.js": 9,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!../VdWidget/dist/intact.js": 10,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!../vdt.js/src/client.js": 11,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!../vdt.js/src/lib/vdt.js": 12,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!../vdt.js/src/lib/parser.js": 13,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!../vdt.js/src/lib/stringifier.js": 14,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!../miss/src/index.js": 15,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!../miss/src/wrappers/select.js": 16,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!../miss/src/wrappers/input.js": 17,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!../miss/src/wrappers/textarea.js": 18,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!../miss/src/tostring.js": 19,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!routes.js": 20,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!components/app/index.js": 21,
+      "node_modules/vdt-loader/index.js??ref--1-0!components/app/app.vdt": 22,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!node_modules/director/build/director.js": 23,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!node_modules/lodash/lodash.js": 24,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!node_modules/webpack/buildin/global.js": 25,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!node_modules/webpack/buildin/module.js": 26,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!pages/index/index.js": 27,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!pages/hello/index.js": 28,
+      "node_modules/vdt-loader/index.js??ref--1-0!pages/index/index.vdt": 29
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7,
+      "8": 8,
+      "9": 9,
+      "10": 10,
+      "11": 11,
+      "12": 12,
+      "13": 13,
+      "14": 14,
+      "15": 15,
+      "16": 16,
+      "17": 17,
+      "18": 18,
+      "19": 19,
+      "20": 20,
+      "21": 21,
+      "22": 22,
+      "23": 23,
+      "24": 24,
+      "25": 25,
+      "26": 26,
+      "27": 27,
+      "28": 28,
+      "29": 29
+    }
+  },
+  "chunks": {
+    "byName": {
+      "client": 2
+    },
+    "byBlocks": {
+      "node_modules/babel-loader/lib/index.js??ref--0-0!client.js:0/1": 0,
+      "node_modules/babel-loader/lib/index.js??ref--0-0!client.js:1/1": 1
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2
+    }
+  }
+}

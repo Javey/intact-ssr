@@ -1,0 +1,3 @@
+<div class="c-flex-1">
+    <div key="view" class="c-flex-1">{{ self.get('view') }}</div>
+</div>
