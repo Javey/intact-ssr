@@ -17,7 +17,7 @@ module.exports = Intact.extend({
 
     },
 
-    load: function(Widget, data, callee) {
+    load: function(Widget, data) {
         return new Promise((resolve) => {
             function load() {
                 var widget = new Widget(data);
@@ -37,9 +37,5 @@ module.exports = Intact.extend({
                 this.one('$inited', load);
             }
         });
-    },
-
-    run: function(data) {
-        this.load();
     }
 });

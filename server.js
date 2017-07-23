@@ -5,7 +5,6 @@ const path = require('path');
 const Router = require('director').http.Router;
 const routes = require('./routes');
 const _ = require('lodash');
-const umdify = require('umdify');
 
 const app = Express();
 

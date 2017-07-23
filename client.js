@@ -1,4 +1,4 @@
-const Intact = require('intact');
+import Intact from 'intact';
 const Vdt = require('vdt');
 window.Intact = Intact;
 window.Vdt = Vdt;
@@ -7,17 +7,26 @@ const App = require('./components/app');
 const Router = require('director').Router;
 const _ = require('lodash');
 
-const app = Intact.mount(App, document.getElementById('app'));
+const app = new App();
+const container = document.getElementById('app');
 
 const router = Router({
     '/': function() {
         require(['./pages/index'], function(Component) {
-            app.load(Component);
+            app.load(Component).then(() => {
+                if (!app.rendered) {
+                    Intact.hydrate(app, container);
+                }
+            });
         });
     },
     '/hello': function() {
         require(['./pages/hello'], function(Component) {
-            app.load(Component);
+            app.load(Component).then(() => {
+                if (!app.rendered) {
+                    Intact.hydrate(app, container);
+                }
+            });
         });
     }
 }).configure({

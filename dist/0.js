@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 27:
+/***/ 31:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -10,7 +10,7 @@ var template;
 if (typeof window === 'undefined') {
     template = Vdt.require('./index.vdt', __filename);
 } else {
-    template = __webpack_require__(29);
+    template = __webpack_require__(33);
 }
 
 module.exports = Intact.extend({
@@ -35,7 +35,7 @@ module.exports = Intact.extend({
 
 /***/ }),
 
-/***/ 29:
+/***/ 33:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = function(obj, _Vdt, blocks) {
@@ -56,7 +56,7 @@ __o = __u.Options, _getModel = __o.getModel, _setModel = __o.setModel,
 _setCheckboxModel = __u.setCheckboxModel, _detectCheckboxChecked = __u.detectCheckboxChecked,
 _setSelectModel = __u.setSelectModel,
 self = this.data, scope = obj;
-return h('div', null, ['\n    index page ', function() {try {return [ self.get('test') ][0]} catch(e) {_e(e)}}.call(this), '\n'])
+return h('div', null, h('span', null, ['\n        index page ', function() {try {return [ self.get('test') ][0]} catch(e) {_e(e)}}.call(this), function() {try {return [ undefined ][0]} catch(e) {_e(e)}}.call(this), ' a\n    ']))
 }
 if (false) {
     module.hot.accept();

@@ -1,3 +1,5 @@
 <div>
-    index page {{ self.get('test') }}
+    <span>
+        index page {{ self.get('test') }}{{ undefined }} a
+    </span>
 </div>

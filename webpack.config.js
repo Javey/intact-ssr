@@ -40,7 +40,7 @@ module.exports = {
     },
     resolve: {
         extensions: ['.js', '.vdt'],
-        mainFields: ['browserify', 'browser', 'module', 'main']
+        mainFields: ['module', 'browserify', 'browser', 'main']
     },
     recordsInputPath: path.resolve(__dirname, '.cache/recordsInputPath.json'),
     recordsOutputPath: path.resolve(__dirname, '.cache/recordsOutputPath.json')
