@@ -1,9 +1,4 @@
-var template;
-if (typeof window === 'undefined') {
-    template = Vdt.require('./index.vdt', __filename);
-} else {
-    template = require('./index.vdt');
-}
+var template = require('./index.vdt');
 
 module.exports = Intact.extend({
     template: template,

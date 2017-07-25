@@ -5,6 +5,6 @@
 <body>
     <div id="app" innerHTML={{ self.content }}></div>
     <script>window.__filename = ''</script>
-    <script src="/dist/client.js"></script>
+    <script src="/client.js"></script>
 </body>
 </html>

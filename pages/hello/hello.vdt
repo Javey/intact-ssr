@@ -1,0 +1,5 @@
+const layout = require('../layout.vdt');
+
+<t:layout>
+    <b:container>Hello Intact {{ self.get('a') }}</b:container>
+</t:layout>

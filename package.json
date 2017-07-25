@@ -18,6 +18,8 @@
   "dependencies": {
     "director": "^1.2.8",
     "express": "^4.15.3",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "vdt": "latest",
+    "intact": "latest"
   }
 }
