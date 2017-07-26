@@ -1,21 +1,11 @@
 const webpack = require('webpack');
 const path = require('path');
-const packageJson = require('./package.json');
-
-const nodeModules = {};
-for (var key in packageJson.dependencies) {
-    nodeModules[key] = 'commonjs ' + key;
-}
 
 module.exports = {
-    entry: {
-        client: './client.js',
-        server: './server.js'
-    },
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: '[name].js',
-        publicPath: '/dist/'
+        publicPath: '/'
     },
     module: {
         rules: [
@@ -42,6 +32,20 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+                test: /\.(styl|css)$/,
+                use: [
+                    {
+                        loader: 'css-loader'
+                    },
+                    {
+                        loader: 'stylus-loader',
+                        options: {
+                            'include css': true
+                        }
+                    },
+                ]
             }
         ]
     },
@@ -51,9 +55,4 @@ module.exports = {
     },
     recordsInputPath: path.resolve(__dirname, '.cache/recordsInputPath.json'),
     recordsOutputPath: path.resolve(__dirname, '.cache/recordsOutputPath.json'),
-    target: 'node',
-    externals: nodeModules,
-    node: {
-        __dirname: false 
-    }
 };

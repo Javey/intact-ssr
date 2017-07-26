@@ -1,4 +1,5 @@
-var template = require('./index.vdt');
+import template from './index.vdt';
+import css from './index.styl';
 
 module.exports = Intact.extend({
     template: template,

@@ -1,9 +1,10 @@
 var template = require('./app.vdt');
-
+import serverStyleCleanup from 'node-style-loader/clientCleanup'
 
 module.exports = Intact.extend({
     defaults: {
-        view: ''
+        view: '',
+        container: null
     },
 
     template: template,
@@ -32,5 +33,16 @@ module.exports = Intact.extend({
                 this.one('$inited', load);
             }
         });
+    },
+
+    run(data) {
+        return (Component) => {
+            this.load(Component, data).then(() => {
+                if (!this.rendered) {
+                    Intact.hydrate(this, this.get('container'));
+                    serverStyleCleanup();
+                }
+            });
+        };
     }
 });

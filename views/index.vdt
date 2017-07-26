@@ -1,10 +1,11 @@
 <html>
-<head>
-    <title>Intact SSR Demo</title>
+<head innerHTML={{ 
+    '<title>Intact SSR Demo</title>\n' + 
+    (self.style || '')
+}}>
 </head>
 <body>
     <div id="app" innerHTML={{ self.content }}></div>
-    <script>window.__filename = ''</script>
     <script src="/client.js"></script>
 </body>
 </html>
